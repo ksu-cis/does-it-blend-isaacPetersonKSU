@@ -8,7 +8,7 @@ namespace DoesItBlend
     /// A class representing ice cubes
     /// </summary>
     /// <summary>
-    public class IceCubes
+    public class IceCubes : Iblendable
     {
         /// Blends the ice cubes
         /// </summary>

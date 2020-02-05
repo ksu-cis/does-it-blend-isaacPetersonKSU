@@ -7,11 +7,8 @@ namespace DoesItBlend
     /// <summary>
     /// A base class representing fruit
     /// </summary>
-    public abstract class Fruit
+    public abstract class Fruit : Iblendable
     {
-        public virtual string Blend()
-        {
-            return "Generic glorp";
-        }
+        public abstract string Blend();
     }
 }
