@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DoesItBlend
 {
-    interface Iblendable
+    public interface Iblendable
     {
         string Blend();
     }
