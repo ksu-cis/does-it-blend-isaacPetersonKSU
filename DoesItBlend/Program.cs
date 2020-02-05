@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DoesItBlend
 {
@@ -12,9 +13,17 @@ namespace DoesItBlend
             var m = new Mango();
             var s = new Strawberry();
 
-            Console.Write(b.Blend());
-            Console.Write(m.Blend());
-            Console.Write(s.Blend());
+            Console.Write(b.Blend() + "\n\n");
+            Console.Write(m.Blend() + "\n\n");
+            Console.Write(s.Blend() + "\n\n");
+
+            List<Fruit> fruits = new List<Fruit>() { b, m, s };
+
+            foreach(Fruit f in fruits)
+            {
+                Console.Write(f.Blend() + "\n\n");
+            }
+            
         }
     }
 }
